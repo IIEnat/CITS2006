@@ -2,12 +2,12 @@
 
 This repository contains all the code I did for the portfolio. It contains the following 
 
-- AI Powered IDS
-- Secure Password Manager
-- Morse Code Learning Mini Game
-- Secure CLi Login system
-- Real Time IP Remutation Checker 
-- Simple Data Masking Tool
+- AI-IDS: AI Powered Intrusion Detection System
+- SPM   : Secure Password Manager
+- Morse : Morse Code Learning Mini Game
+- Login : Secure CLi Login system
+- IP    : Real Time IP Remutation Checker 
+- Mask  : Simple Data Masking Tool
 
 ## Credits and Acknowledgements
 

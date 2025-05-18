@@ -1,10 +1,6 @@
-# Secure Password Manager
+# Secure Password Manager (SPM)
 
-This is a **simple but secure command-line password manager** built with Python and SQLAlchemy. It allows you to securely store encrypted passwords for various services in a local SQLite database (`passwords.db`). This password manager is secure because the key used for encrypting and decrypting is stored locally in the user's file system so if an attacker were to gain access to the db file, they would NOT be able to decrypt the stored encrypted passwords. 
-
-## Why Is It Secure?
-- **Database Storage**: Passwords are encrypted, not stored in plain text.
-- **Environment Configuration**: The secret key for encryption is loaded from a `.env` file and is never hardcoded in the source code.
+This is a **simple but secure command-line password manager** built with Python and SQLAlchemy. It allows you to securely store encrypted passwords for various services in a local SQLite database (`passwords.db`). I would consider this password manager actually secure as the key used for encrypting and decrypting passwords is stored locally in the user's file system so if an attacker were to gain access to the db file, they would NOT be able to decrypt the stored encrypted passwords. 
 
 ## Features
 - Add service credentials (service name, username, password)
