@@ -28,6 +28,7 @@ class PasswordEntry(Base):
     id = Column(Integer, primary_key=True)
     service = Column(String, nullable=False)
     username = Column(String, nullable=False)
+    email = Column(String, nullable=False)
     password_encrypted = Column(String, nullable=False)
 
 Base.metadata.create_all(engine)
@@ -41,18 +42,21 @@ def decrypt_password(encrypted_password):
 def add_entry():
     service = input("Service: ")
     username = input("Username: ")
+    email = input("Email: ")
     password = getpass("Password: ")
     encrypted_password = encrypt_password(password)
-    entry = PasswordEntry(service=service, username=username, password_encrypted=encrypted_password)
+    entry = PasswordEntry(service=service, username=username, email=email, password_encrypted=encrypted_password)
     session.add(entry)
     session.commit()
     print("Entry added successfully.")
 
 def view_entries():
     entries = session.query(PasswordEntry).all()
-    for e in entries:
+    print("\n{:<5} {:<15} {:<15} {:<25} {:<20}".format("ID", "Service", "Username", "Email", "Password"))
+    print("-" * 80)
+    for idx, e in enumerate(entries, start=1):
         decrypted_password = decrypt_password(e.password_encrypted)
-        print(f"Service: {e.service}, Username: {e.username}, Password: {decrypted_password}")
+        print("{:<5} {:<15} {:<15} {:<25} {:<20}".format(idx, e.service, e.username, e.email, decrypted_password))
 
 def main():
     while True:

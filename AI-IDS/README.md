@@ -64,11 +64,11 @@ The dataset **`big_dataset.csv`** was created by combining all the datasets prov
 
 ## Sample Output
 ```
-Accuracy : 0.9926 → 7502 out of 7558 packets correctly classified
-Precision: 0.9946 → 3486 of 3505 predicted anomalous were actually anomalous
-Recall   : 0.9895 → 3486 of 3523 actual anomalous packets were correctly detected
-F1 Score : 0.9920 → harmonic mean of precision and recall
-Counts   : TP=3486, TN=4016, FP=19, FN=37
+Accuracy : 0.9930 → 7505 out of 7558 packets correctly classified
+Precision: 0.9949 → 3488 of 3506 predicted anomalous were actually anomalous
+Recall   : 0.9901 → 3488 of 3523 actual anomalous packets were correctly detected
+F1 Score : 0.9925 → harmonic mean of precision and recall
+Counts   : TP=3488, TN=4017, FP=18, FN=35
 ```
 
 
