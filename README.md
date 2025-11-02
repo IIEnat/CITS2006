@@ -1,6 +1,6 @@
 ## About Repository 
 
-This repository contains all the code I did for the portfolio. It is separated into six folders each relating to a different task: 
+This repository contains all the code I did for the **CITS2006: Defensive Cybersecurity** task. It is separated into six folders each relating to a different sub task: 
 
 - AI-IDS: AI Powered Intrusion Detection System
 - SPM   : Secure Password Manager
@@ -8,10 +8,3 @@ This repository contains all the code I did for the portfolio. It is separated i
 - Login : Simple CLi Login System
 - IP    : Real Time IP Reputation Checker 
 - Mask  : Simple Data Masking Tool
-
-## Credits and Acknowledgements
-
-All content in this repository is intended for the unit **CITS2006: Defensive Cybersecurity** by **Jin Hong**. 
-
-It is specifically intended for **Section C** of my portfolio.
-
